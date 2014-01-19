@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>  
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+	window.onload = function () {
+        CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#66C266",
+                "#B2E0B2",
+                "#66C266",
+                "#009900",
+                "#FF6666",
+				"#FF1919",
+				"#E0E0E0",
+				"#FFB2B2",
+				"#FFB2B2",
+				"#FFE6E6",                
+                ]);
+
+        var chart = new CanvasJS.Chart("chartContainer",
+        {
+            colorSet: "greenShades",
+                theme: "theme3",
+							
+                toolTip:{
+                    enabled: true,
+                },
+
+                creditText: "",
+
+                title:{
+                    text: "Where do immigrants go in Europe?",
+                    fontFamily: "Helvetica, sans-serif",
+                    horizontalAlign: "left",
+                }, 
+
+                legend:{
+                    horizontalAlign: "left",
+                    fontSize: "15",
+                    verticalAlign: "bottom",
+                    fontWeight: "lighter",
+                },
+
+                backgroundColor: "#fafafa",
+
+                data: [
+                {        
+                    type: "doughnut",
+                    startAngle: 60,
+                    indexLabelFontSize: "15",
+                    indexLabelLineThickness: "2",
+                    showInLegend: false,
+
+                    dataPoints: [
+                    {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/germany.svg", sp: 195842, fr: 124799, it: 44000, pl: 147800, uk:124000, 
+                    	toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Italy: {it}<br>to Poland: {pl}<br>to the UK: {uk}"},
+					{name: "France", y: 65633194, label: "France", imageUrl:"img/france.svg", sp: 122385, uk: 120000, ger: 113885, it: 34000, po: 5985,toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to the UK: {uk}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
+                    {name: "UK", y: 63887988, label: "UK", imageUrl: "img/uk.svg", sp: 390880, fr: 153598, ger: 100385, it: 30000, po: 23608, toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
+                    {name: "Italy", y: 59685227, label: "Italy", imageUrl: "img/italy.svg", ger: 529417, fr: 303923, sp: 187847, uk: 112000, po: 5985, toolTipContent: "<strong>{name}</strong>:<br>to Germany: {ger}<br>to France: {fr}<br>to Spain: {sp}<br>to the UK: {uk}<br>to Portugal: {po}"},
+                    {name: "Spain", y: 46704308, label: "Spain", imageUrl:"img/spain.svg", fr: 248324, ger: 120231, uk: 71000, it: 20000, po: 18030, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Italy: {it}<br>to Portugal: {po}"},
+                    {name: "Poland", y: 38533299, label: "Poland", imageUrl:"img/poland.svg", uk:576000, ger: 532375, it: 112000, fr: 92255, sp: 85862, toolTipContent:"<strong>{name}</strong>:<br>to the UK: {uk}<br>to Germany: {ger}<br> to Italy: {it}<br>to France: {fr}<br>to Spain: {sp}"},
+                    {name: "Romania", y: 20057458, label: "Romania", imageUrl:"img/romania.svg", it: 997000, sp: 864278, ger: 205026, uk: 79000, gr: 46523, toolTipContent: "<strong>{name}</strong>:<br>to Italy: {it}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Greece: {gr}"},
+                    {name: "Greece", y: 11062508, label: "Greece", imageUrl:"img/greece.svg", ger: 298254, uk: 29000, fr: 9630, ro: 6472, bu: 1253, toolTipContent:"<strong>{name}</strong>:<br>to Germany: {ger}<br>to the UK: {uk}<br>to France: {fr}<br>to Romania: {ro}<br>to Bulgaria: {bu}"},
+                    {name: "Portugal", y: 10487289, label: "Portugal", imageUrl:"img/portugal.svg", fr: 588276, sp: 140706, ger: 120560, uk: 102000, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}"},
+                    {name: "Bulgaria", y: 7284552, label: "Bulgaria", imageUrl: "img/bulgaria.svg", sp: 172634, ger: 118759, gr: 75915, it: 53000, uk: 46000, toolTipContent:"<strong>{name}</strong>:<br>to Spain: {sp}<br>to Germany: {ger}<br>to Greece: {gr}<br>to Italy: {it}<br>to the UK: {uk}"},
+                    ]
+                }
+                ]
+            });
+
+        var dataPoints = chart.options.data[0].dataPoints;
+        for(var i = 0; i < dataPoints.length; i++){
+            dataPoints[i].click = updateBackgroundImage;
+        }
+
+        chart.render();
+
+        function updateBackgroundImage(e){
+            document.getElementById('chartContainer').style.backgroundImage = "url('" + e.dataPoint.imageUrl + "')";
+        }
+    }
+	</script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+	<body>
+		<div id="chartContainer">
+		</div>
+		<div id="info">
+			<h1>Project by <a href="http://twitter.com/MiErtl">Michael Ertl</a> and <a href="http://twitter.com/basilesimon">Basile Simon</a></h1>
+			<h3>What's the story?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ornare ipsum. Vestibulum aliquam felis nec mi pulvinar, non accumsan leo laoreet. Nullam condimentum nisl neque, sed scelerisque est congue non. Praesent eget libero sollicitudin, facilisis ligula eget, feugiat ipsum. Sed metus felis, cursus ut est id, imperdiet placerat massa. Aenean ligula arcu, iaculis eleifend nisi quis, elementum porta mauris. Curabitur suscipit sagittis urna id placerat. Nunc sed lacinia neque. Aenean rutrum, orci a tincidunt adipiscing, enim sapien sollicitudin nibh, nec tincidunt enim nunc id augue. Nulla felis neque, condimentum eu feugiat in, congue blandit nunc. Sed iaculis dui in metus scelerisque congue. Phasellus malesuada sapien vitae pellentesque dapibus. Sed quis bibendum nunc. Suspendisse nec nisl elementum, dignissim libero vitae, consequat mi. Nunc sagittis nibh non neque pulvinar luctus.</p>
+
+				<p>Sed in ante ac diam pretium iaculis. Maecenas aliquam augue sem. Praesent pulvinar, urna id aliquet facilisis, tortor metus lacinia nisl, id convallis urna ante ut massa. Donec arcu odio, adipiscing ut interdum eu, tristique sit amet lorem. Donec a euismod erat. Vestibulum cursus mollis sapien, et egestas nibh vulputate nec. Phasellus tincidunt in arcu posuere iaculis. </p>
+
+			<h3>Find our data:</h3>
+
+				<ul>
+					<li>The project's code is available <a href="https://github.com/basilesimon/immigration-donut">on Github.</a></li>
+					<li>We regrouped the data in a single dataset.</li>
+					<li>The JavaScript library used is <a href="http://canvasjs.com">CanvasJS.</a></li>
+				</ul>
+		</div>
+	</body>
+</html>
