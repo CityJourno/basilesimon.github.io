@@ -5,11 +5,31 @@ body {
 
 #chartContainer
 {
-    background-position:center;
-    background-size: 370px 480px;
+    background-position:50% 59%;
+    background-size: 23em;
     background-repeat:no-repeat;
     height: 900px; 
     width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    #chartContainer {
+            background-position:50% 60%;
+            background-size: 11.5em;
+            background-repeat:no-repeat;
+            height: 500px; 
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 370px) {
+    #chartContainer {
+            background-position:50% 66%;
+            background-size: 6.5em;
+            background-repeat:no-repeat;
+            height: 360px; 
+            width: 100%;
+        }
 }
 
 #info {
@@ -18,6 +38,18 @@ body {
 	font-family: Helvetica, sans-serif;
 	margin-left: 3%;
 	margin-right: 3%;
+}
+
+#info h1 {
+    font-size: 1.25em;
+}
+
+#info h3 {
+    font-size: 1em;
+}
+
+#info p{
+    font-size: 0.875em;
 }
 
 a:link {
