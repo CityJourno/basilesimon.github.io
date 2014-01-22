@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>  
-	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta title="Immigrations flows in Europe">
+    <meta name="description" content="Data visualisation of number of immigrants across European countries, including France, Germany, Italy, Spain, Romania, the UK, Portugal, Poland, Bulgaria, and Greece">
     <meta name="viewport" content="width=device-width, user-scalable=no, height=device-height, initial-scale=1">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>	
 <body>
 		<div id="chartContainer">
@@ -12,11 +14,11 @@
 		<div id="info">
 			<h1>Project by <a href="http://twitter.com/MiErtl">Michael Ertl</a> and <a href="http://twitter.com/basilesimon">Basile Simon</a></h1>
 			<h3>What's the story?</h3>
-				<p>Immigration is one of these topic you hear about almost everyday in the media. From <a href="http://www.dailymail.co.uk/news/article-2268952/Thousands-Bulgarians-Romanians-plan-flood-UK-2014-employment-restrictions-relax.html">Romanians flooding the UK</a> to the massive movements of population caused by wars around the world, we are bombarded with numbers and flows of migrants, affecting our capacity to see the wider picture.<br>
+				<p>Immigration is one of these topic you hear about almost every day in the media. From <a href="http://www.dailymail.co.uk/news/article-2268952/Thousands-Bulgarians-Romanians-plan-flood-UK-2014-employment-restrictions-relax.html">Romanians flooding the UK</a> to the massive movements of population caused by wars around the world, we are bombarded with numbers and flows of migrants, affecting our capacity to see the wider picture.<br>
                 It is regularly an electoral issue in Europe, and some political parties are even founded on certain answers to the immigration question. Some even make their score thanks to the positions they took about illegal or legal immigration.
                 </p>
 
-				<p>We propose you a visual visualisation of the immigration in Europe, which hopefully will help realising how important the migration flows are on our continent. It displays graphically the top destinations for immigrants in Europe. 
+				<p>Immigration is a crucial question. Facing the importance of this issue, we propose you a visual visualisation of the immigration in Europe, which hopefully will help realising how important the migration flows are on our continent. It displays graphically the top destinations for immigrants in Europe. 
                 </p>
 
                 <p>For questions of pure readability, we limited the scope to 10 countries, and we only represented the top 5 destinations for immigrations in the doughnut (although the data for the 10 countries is published in our datasets, see below).<br>
@@ -56,52 +58,52 @@
         {
             colorSet: "greenShades",
                 theme: "theme3",
-							
-                toolTip:{
-                    enabled: true,
-                },
+						
+            toolTip:{
+                enabled: true,
+            },
 
-                creditText: "",
+            creditText: "",
 
-                title:{
-                    text: "Where do immigrants go in Europe?",
-                    fontFamily: "'Open Sans', Helvetica, sans-serif",
-                    horizontalAlign: "left",
-                }, 
+            title:{
+                text: "Where do immigrants go in Europe?",
+                fontFamily: "'Open Sans', Helvetica, sans-serif",
+                horizontalAlign: "left",
+            }, 
 
-                legend:{
-                    horizontalAlign: "left",
-                    fontSize: "15",
-                    verticalAlign: "bottom",
-                    fontWeight: "lighter",
-                },
+            legend:{
+                horizontalAlign: "left",
+                fontSize: "15",
+                verticalAlign: "bottom",
+                fontWeight: "lighter",
+            },
 
-                backgroundColor: "#fafafa",
+            backgroundColor: "#fafafa",
 
-                data: [
-                {        
-                    type: "doughnut",
-                    startAngle: 60,
-                    indexLabelFontSize: "15",
-                    indexLabelLineThickness: "2",
-                    showInLegend: false,
+            data: [
+            {        
+                type: "doughnut",
+                startAngle: 60,
+                indexLabelFontSize: "15",
+                indexLabelLineThickness: "2",
+                showInLegend: false,
 
-                    dataPoints: [
-                    {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/germany.svg", sp: 195842, fr: 124799, it: 44000, pl: 147800, uk:124000, 
-                    	toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Italy: {it}<br>to Poland: {pl}<br>to the UK: {uk}"},
-					{name: "France", y: 65633194, label: "France", imageUrl:"img/france.svg", sp: 122385, uk: 120000, ger: 113885, it: 34000, po: 5985,toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to the UK: {uk}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
-                    {name: "UK", y: 63887988, label: "UK", imageUrl: "img/uk.svg", sp: 390880, fr: 153598, ger: 100385, it: 30000, po: 23608, toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
-                    {name: "Italy", y: 59685227, label: "Italy", imageUrl: "img/italy.svg", ger: 529417, fr: 303923, sp: 187847, uk: 112000, po: 5985, toolTipContent: "<strong>{name}</strong>:<br>to Germany: {ger}<br>to France: {fr}<br>to Spain: {sp}<br>to the UK: {uk}<br>to Portugal: {po}"},
-                    {name: "Spain", y: 46704308, label: "Spain", imageUrl:"img/spain.svg", fr: 248324, ger: 120231, uk: 71000, it: 20000, po: 18030, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Italy: {it}<br>to Portugal: {po}"},
-                    {name: "Poland", y: 38533299, label: "Poland", imageUrl:"img/poland.svg", uk:576000, ger: 532375, it: 112000, fr: 92255, sp: 85862, toolTipContent:"<strong>{name}</strong>:<br>to the UK: {uk}<br>to Germany: {ger}<br> to Italy: {it}<br>to France: {fr}<br>to Spain: {sp}"},
-                    {name: "Romania", y: 20057458, label: "Romania", imageUrl:"img/romania.svg", it: 997000, sp: 864278, ger: 205026, uk: 79000, gr: 46523, toolTipContent: "<strong>{name}</strong>:<br>to Italy: {it}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Greece: {gr}"},
-                    {name: "Greece", y: 11062508, label: "Greece", imageUrl:"img/greece.svg", ger: 298254, uk: 29000, fr: 9630, ro: 6472, bu: 1253, toolTipContent:"<strong>{name}</strong>:<br>to Germany: {ger}<br>to the UK: {uk}<br>to France: {fr}<br>to Romania: {ro}<br>to Bulgaria: {bu}"},
-                    {name: "Portugal", y: 10487289, label: "Portugal", imageUrl:"img/portugal.svg", fr: 588276, sp: 140706, ger: 120560, uk: 102000, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}"},
-                    {name: "Bulgaria", y: 7284552, label: "Bulgaria", imageUrl: "img/bulgaria.svg", sp: 172634, ger: 118759, gr: 75915, it: 53000, uk: 46000, toolTipContent:"<strong>{name}</strong>:<br>to Spain: {sp}<br>to Germany: {ger}<br>to Greece: {gr}<br>to Italy: {it}<br>to the UK: {uk}"},
-                    ]
-                }
+                dataPoints: [
+                {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/germany.svg", sp: 195842, fr: 124799, it: 44000, pl: 147800, uk:124000, 
+                	toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Italy: {it}<br>to Poland: {pl}<br>to the UK: {uk}"},
+				{name: "France", y: 65633194, label: "France", imageUrl:"img/france.svg", sp: 122385, uk: 120000, ger: 113885, it: 34000, po: 5985,toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to the UK: {uk}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
+                {name: "UK", y: 63887988, label: "UK", imageUrl: "img/uk.svg", sp: 390880, fr: 153598, ger: 100385, it: 30000, po: 23608, toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
+                {name: "Italy", y: 59685227, label: "Italy", imageUrl: "img/italy.svg", ger: 529417, fr: 303923, sp: 187847, uk: 112000, po: 5985, toolTipContent: "<strong>{name}</strong>:<br>to Germany: {ger}<br>to France: {fr}<br>to Spain: {sp}<br>to the UK: {uk}<br>to Portugal: {po}"},
+                {name: "Spain", y: 46704308, label: "Spain", imageUrl:"img/spain.svg", fr: 248324, ger: 120231, uk: 71000, it: 20000, po: 18030, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Italy: {it}<br>to Portugal: {po}"},
+                {name: "Poland", y: 38533299, label: "Poland", imageUrl:"img/poland.svg", uk:576000, ger: 532375, it: 112000, fr: 92255, sp: 85862, toolTipContent:"<strong>{name}</strong>:<br>to the UK: {uk}<br>to Germany: {ger}<br> to Italy: {it}<br>to France: {fr}<br>to Spain: {sp}"},
+                {name: "Romania", y: 20057458, label: "Romania", imageUrl:"img/romania.svg", it: 997000, sp: 864278, ger: 205026, uk: 79000, gr: 46523, toolTipContent: "<strong>{name}</strong>:<br>to Italy: {it}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}<br>to Greece: {gr}"},
+                {name: "Greece", y: 11062508, label: "Greece", imageUrl:"img/greece.svg", ger: 298254, uk: 29000, fr: 9630, ro: 6472, bu: 1253, toolTipContent:"<strong>{name}</strong>:<br>to Germany: {ger}<br>to the UK: {uk}<br>to France: {fr}<br>to Romania: {ro}<br>to Bulgaria: {bu}"},
+                {name: "Portugal", y: 10487289, label: "Portugal", imageUrl:"img/portugal.svg", fr: 588276, sp: 140706, ger: 120560, uk: 102000, toolTipContent:"<strong>{name}</strong>:<br>to France: {fr}<br>to Spain: {sp}<br>to Germany: {ger}<br>to the UK: {uk}"},
+                {name: "Bulgaria", y: 7284552, label: "Bulgaria", imageUrl: "img/bulgaria.svg", sp: 172634, ger: 118759, gr: 75915, it: 53000, uk: 46000, toolTipContent:"<strong>{name}</strong>:<br>to Spain: {sp}<br>to Germany: {ger}<br>to Greece: {gr}<br>to Italy: {it}<br>to the UK: {uk}"},
                 ]
-            });
+            }
+            ]
+        });
 
         var dataPoints = chart.options.data[0].dataPoints;
         for(var i = 0; i < dataPoints.length; i++){
@@ -116,5 +118,5 @@
     }
 	</script>
 
-	</body>
+</body>
 </html>
