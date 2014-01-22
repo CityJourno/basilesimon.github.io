@@ -1,24 +1,55 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>  
 	<link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, height=device-height, initial-scale=1">
-	<script type="text/javascript">
-	window.onload = function () {
-        CanvasJS.addColorSet("greenShades",
-                [//colorSet Array
-                "#66C266",
-                "#B2E0B2",
-                "#66C266",
-                "#009900",
-                "#FF6666",
-				"#FF1919",
-				"#E0E0E0",
-				"#FFB2B2",
-				"#FFB2B2",
-				"#FFE6E6",                
-                ]);
+    <meta charset="utf-8">
+</head>	
+<body>
+		<div id="chartContainer">
+		</div>
+		<div id="info">
+			<h1>Project by <a href="http://twitter.com/MiErtl">Michael Ertl</a> and <a href="http://twitter.com/basilesimon">Basile Simon</a></h1>
+			<h3>What's the story?</h3>
+				<p>Immigration is one of these topic you hear about almost everyday in the media. From <a href="http://www.dailymail.co.uk/news/article-2268952/Thousands-Bulgarians-Romanians-plan-flood-UK-2014-employment-restrictions-relax.html">Romanians flooding the UK</a> to the massive movements of population caused by wars around the world, we are bombarded with numbers and flows of migrants, affecting our capacity to see the wider picture.<br>
+                It is regularly an electoral issue in Europe, and some political parties are even founded on certain answers to the immigration question. Some even make their score thanks to the positions they took about illegal or legal immigration.
+                </p>
+
+				<p>We try to propose a visual visualisation of the immigration in Europe which hopefully will help realising how important the migration flows are on our continent. It displays graphically the top destinations for immigrants in Europe. 
+                </p>
+
+                <p>For questions of pure readability, we limited the scope to 10 countries, and we only represented the top 5 destinations for immigrations in the doughnut (although the data for the 10 countries is published in our datasets, see below).<br>
+                Due to the nature of the data, composed only from official census and sources, this chart does not take into account illegal immigration.
+                </p>
+        </div>
+		<div id="data">
+            <h3>Find our data:</h3>
+
+				<ul>
+					<li><p>The project's code is available <a href="https://github.com/basilesimon/immigration-donut">on Github.</a></p></li>
+					<li><p>We regrouped the data in a single dataset: Google Spreadsheet - direct download (XLS) - direct download (CSV).</p></li>
+					<li><p>The JavaScript library used is <a href="http://canvasjs.com">CanvasJS.</a></p></li>
+				</ul>
+		</div>
+
+<!-- SCRIPTS -->
+
+		<script type="text/javascript" src="canvasjs.min.js"></script>
+		<script type="text/javascript">
+		window.onload = function () {
+	        CanvasJS.addColorSet("greenShades",
+	                [//colorSet Array
+	                "#66C266",
+	                "#B2E0B2",
+	                "#66C266",
+	                "#009900",
+	                "#FF6666",
+					"#FF1919",
+					"#E0E0E0",
+					"#FFB2B2",
+					"#FFB2B2",
+					"#FFE6E6",                
+	                ]);
 
         var chart = new CanvasJS.Chart("chartContainer",
         {
@@ -55,7 +86,7 @@
                     showInLegend: false,
 
                     dataPoints: [
-                    {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/circle.svg", sp: 195842, fr: 124799, it: 44000, pl: 147800, uk:124000, 
+                    {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/germany.svg", sp: 195842, fr: 124799, it: 44000, pl: 147800, uk:124000, 
                     	toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Italy: {it}<br>to Poland: {pl}<br>to the UK: {uk}"},
 					{name: "France", y: 65633194, label: "France", imageUrl:"img/france.svg", sp: 122385, uk: 120000, ger: 113885, it: 34000, po: 5985,toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to the UK: {uk}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
                     {name: "UK", y: 63887988, label: "UK", imageUrl: "img/uk.svg", sp: 390880, fr: 153598, ger: 100385, it: 30000, po: 23608, toolTipContent: "<strong>{name}</strong>:<br>to Spain: {sp}<br>to France: {fr}<br>to Germany: {ger}<br>to Italy: {it}<br>to Portugal: {po}"},
@@ -83,29 +114,6 @@
         }
     }
 	</script>
-	<script type="text/javascript" src="canvasjs.min.js"></script>
-	<body>
-		<div id="chartContainer">
-		</div>
-		<div id="info">
-			<h1>Project by <a href="http://twitter.com/MiErtl">Michael Ertl</a> and <a href="http://twitter.com/basilesimon">Basile Simon</a></h1>
-			<h3>What's the story?</h3>
-				<p>Immigration is one of these topic you hear about almost everyday in the media. From Romanians flooding the UK to the massive movements of population caused by wars around the world, it can be tricky to differenciate between WUT AND WUT.<br>
-                It is regularly an electoral issue in Europe, and some political parties are even founded on certain answers to the immigration question.
-                </p>
 
-				<p>We try to propose a visual visualisation of the immigration in Europe which hopefully will help realising how important the migration flows are on our continent.
-                </p>
-
-                <p>For questions of pure readability, we limited the scope to 10 countries, and we only represented the top 5 destinations for immigrations in the doughnut (although the data for the 10 countries is published in our datasets, see below).</p>
-
-			<h3>Find our data:</h3>
-
-				<ul>
-					<li><p>The project's code is available <a href="https://github.com/basilesimon/immigration-donut">on Github.</a></p></li>
-					<li><p>We regrouped the data in a single dataset.</p></li>
-					<li><p>The JavaScript library used is <a href="http://canvasjs.com">CanvasJS.</a></p></li>
-				</ul>
-		</div>
 	</body>
 </html>

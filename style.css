@@ -1,16 +1,78 @@
 body {
 	background-color: #fafafa;
 	font-size: 16px;
+	color: #111111;
 }
 
+/*-----------------------MAIN BOXES-----------------------*/
 #chartContainer
 {
-    background-position:50% 59%;
-    background-size: 23em;
+    background-position:50% 57.5%;
+    background-size: 22em;
     background-repeat:no-repeat;
     height: 900px; 
     width: 100%;
 }
+
+#info {
+    height: 300px;
+    background-color: #fafafa;
+    font-family: Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    float:left;
+    width: 45%;
+}
+
+#data {
+    height: 300px;
+    background-color: #fafafa;
+    font-family: Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: right;
+    width: 40%;
+    margin-top: 3em;
+}
+
+/*----------------------CONTENT--------------------*/
+
+h1 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p{
+    font-size: 0.875em;
+}
+
+a:link {
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: #aaaaaa;   
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.canvasjs-chart-canvas
+{
+    background-color:transparent !important;
+}
+
+/*--------------------RESPONSIVE--------------------*/
 
 @media screen and (max-width: 1000px) {
     #chartContainer {
@@ -30,48 +92,4 @@ body {
             height: 360px; 
             width: 100%;
         }
-}
-
-#info {
-	height: 300px;
-	background-color: #fafafa;
-	font-family: Helvetica, sans-serif;
-	margin-left: 3%;
-	margin-right: 3%;
-}
-
-#info h1 {
-    font-size: 1.25em;
-}
-
-#info h3 {
-    font-size: 1em;
-}
-
-#info p{
-    font-size: 0.875em;
-}
-
-a:link {
-    text-decoration: underline;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color:black;
-}
-
-a:hover {
-    color: grey;   
-}
-
-a:active {
-    text-decoration: none;
-}
-
-
-.canvasjs-chart-canvas
-{
-    background-color:transparent !important;
 }
