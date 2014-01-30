@@ -74,6 +74,10 @@ a:active {
     background-color:transparent !important;
 }
 
+#data p {
+    margin-left: 0.5em;
+}
+
 /*--------------------RESPONSIVE--------------------*/
 
 @media screen and (max-width: 1400px) {
