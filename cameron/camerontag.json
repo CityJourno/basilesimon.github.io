@@ -1,0 +1,225 @@
+{
+    "results": [
+        {
+            "@id": "http://www.bbc.co.uk/things/ea0aacda-0e5b-4fa2-9f94-dfe775b321a4#id",
+            "@type": [
+                "Thing",
+                "Organisation"
+            ],
+            "metric:tagUsageCount": 2004,
+            "domain:canonicalName": "BBC Birmingham and Black Country",
+            "disambiguationHint": "the BBC news service for Birmingham and Black Country",
+            "label": "BBC Birmingham and Black Country",
+            "preferredLabel": "BBC Birmingham and Black Country"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 1319,
+            "domain:canonicalName": "Football",
+            "disambiguationHint": "Sports discipline",
+            "label": "Football",
+            "domain:name": "Football",
+            "preferredLabel": "Football",
+            "shortLabel": "Football",
+            "domain:shortName": "Football",
+            "slug": "football",
+            "domain:document": [
+                "http://www.bbc.co.uk/sport/olympics/2012/sports/football",
+                "http://www.faw.org.uk/",
+                "http://www.fifa.com/",
+                "http://www.irishfa.com/",
+                "http://www.scottishfa.co.uk/",
+                "http://www.thefa.com/"
+            ],
+            "primaryTopicOf": [
+                "http://www.bbc.co.uk/sport/olympics/2012/sports/football",
+                "http://www.faw.org.uk/",
+                "http://www.fifa.com/",
+                "http://www.irishfa.com/",
+                "http://www.scottishfa.co.uk/",
+                "http://www.thefa.com/"
+            ]
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 493,
+            "domain:canonicalName": [
+                "Winter Olympics",
+                "Winter Olympics"
+            ],
+            "disambiguationHint": "Winter Olympics Recurring Competition",
+            "label": [
+                "Winter Olympics",
+                "Winter Olympics"
+            ],
+            "domain:name": "Winter Olympics",
+            "preferredLabel": "Winter Olympics",
+            "shortLabel": "Winter Olympics",
+            "domain:shortName": "Winter Olympics",
+            "slug": "winter-olympics",
+            "sameAs": "http://dbpedia.org/resource/Winter_Olympic_Games"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/079a365b-0602-42f8-83d5-9db03c6b16c7#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 380,
+            "domain:canonicalName": [
+                "Sochi 2014",
+                "Sochi 2014"
+            ],
+            "disambiguationHint": "Winter Olympics Competition",
+            "label": [
+                "Sochi 2014",
+                "Sochi 2014",
+                "Sochi 2014 (Competition)"
+            ],
+            "domain:name": "Sochi 2014",
+            "preferredLabel": "Sochi 2014",
+            "shortLabel": "Sochi 2014",
+            "domain:shortName": "Sochi 2014"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 342,
+            "domain:canonicalName": [
+                "Premier League",
+                "Premier League"
+            ],
+            "disambiguationHint": "English football competition",
+            "label": [
+                "Barclays Premier League",
+                "Premier League",
+                "Premier League"
+            ],
+            "domain:name": "Barclays Premier League",
+            "preferredLabel": "Premier League",
+            "shortLabel": "Premier Lge",
+            "domain:shortName": "Premier League",
+            "slug": "premier-league",
+            "domain:document": [
+                "http://www.bbc.co.uk/sport/football/premier-league",
+                "http://www.premierleague.com/en-gb.html"
+            ],
+            "primaryTopicOf": [
+                "http://www.bbc.co.uk/sport/football/premier-league",
+                "http://www.premierleague.com/en-gb.html"
+            ]
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/b8e276dd-a47f-4574-a484-c10e4f9b9541#id",
+            "@type": [
+                "Theme",
+                "Thing",
+                "news:Theme"
+            ],
+            "metric:tagUsageCount": 329,
+            "domain:canonicalName": "UK Floods",
+            "disambiguationHint": "Floods in the United Kingdom",
+            "label": "UK Floods",
+            "preferredLabel": "UK Floods",
+            "slug": "UK_Floods",
+            "sameAs": "http://dbpedia.org/resource/List_of_floods"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 237,
+            "domain:canonicalName": "Rugby Union",
+            "disambiguationHint": "Sports discipline",
+            "label": "Rugby Union",
+            "domain:name": "Rugby Union",
+            "preferredLabel": "Rugby Union",
+            "shortLabel": "Rugby Union",
+            "domain:shortName": "Rugby Union",
+            "slug": "rugby-union"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 233,
+            "domain:canonicalName": [
+                "Championship",
+                "Championship"
+            ],
+            "disambiguationHint": "English football competition",
+            "label": [
+                "Championship",
+                "Championship",
+                "Sky Bet Championship"
+            ],
+            "domain:name": "Sky Bet Championship",
+            "preferredLabel": "Championship",
+            "shortLabel": "Championship",
+            "domain:shortName": "Championship",
+            "slug": "championship",
+            "domain:document": [
+                "http://www.bbc.co.uk/sport/football/championship",
+                "http://www.football-league.co.uk/page/ChampionshipHome"
+            ],
+            "primaryTopicOf": [
+                "http://www.bbc.co.uk/sport/football/championship",
+                "http://www.football-league.co.uk/page/ChampionshipHome"
+            ]
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/82857f8e-8134-462a-bb32-b7b14f4eab75#id",
+            "@type": [
+                "Place",
+                "Thing"
+            ],
+            "metric:tagUsageCount": 226,
+            "domain:canonicalName": "United States of America",
+            "disambiguationHint": "United States of America",
+            "label": "United States of America",
+            "geo:lat": "39.76",
+            "geo:long": "-98.5",
+            "preferredLabel": "United States of America",
+            "sameAs": "http://sws.geonames.org/6252001/"
+        },
+        {
+            "@id": "http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id",
+            "@type": [
+                "Thing"
+            ],
+            "metric:tagUsageCount": 225,
+            "domain:canonicalName": [
+                "League One",
+                "League One"
+            ],
+            "disambiguationHint": "English football competition",
+            "label": [
+                "League One",
+                "League One",
+                "Sky Bet League One"
+            ],
+            "domain:name": "Sky Bet League One",
+            "preferredLabel": "League One",
+            "shortLabel": "League One",
+            "domain:shortName": "League One",
+            "slug": "league-one",
+            "domain:document": [
+                "http://www.bbc.co.uk/sport/football/league-one",
+                "http://www.football-league.co.uk/page/League1Home"
+            ],
+            "primaryTopicOf": [
+                "http://www.bbc.co.uk/sport/football/league-one",
+                "http://www.football-league.co.uk/page/League1Home"
+            ]
+        }
+    ]
+}
