@@ -169,3 +169,15 @@ grey {
     line-height:1.2;
     font-size: 14px;
 }
+
+.navbar {
+    text-align:right;
+    padding-right:3em;
+    padding-top: 1em;
+    border: 0px none;
+    background-color: inherit;
+}
+
+.navbar a {
+    padding-right: 1em;
+}
