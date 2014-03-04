@@ -45,7 +45,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: #415DB1;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -108,7 +108,7 @@ a:after {
 	color: #555555;
 	cursor: default;
 	background-color: #ffffff;
-	border-left: 5px solid #1abc9c;
+	border-left: 5px solid #415DB1;
 	border-bottom-color: transparent;
 	border-top-color: transparent;
 	border-right-color: transparent;
@@ -151,7 +151,7 @@ i {
 }
 
 a h6{
-	color: #1abc9c;
+	color: #415DB1;
 }
 
 a h6:hover {
@@ -180,4 +180,8 @@ grey {
 
 .navbar a {
     padding-right: 1em;
+}
+
+#profile, #contact{
+    margin-top: 20%;
 }
