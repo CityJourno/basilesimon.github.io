@@ -186,6 +186,19 @@ grey {
     font-size:2em;
 }
 
-#profile, #contact{
+p.sm:nth-child(6) a {
+    color:#444;
+}
+
+p.sm:nth-child(6) a:hover {
+    color:#999;
+}
+
+
+#profile {
+	margin-top: 5%;
+}
+
+#contact{
     margin-top: 20%;
 }
