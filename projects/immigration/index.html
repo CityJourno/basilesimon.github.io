@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+    <meta title="Immigrations flows in Europe">
+    <title>Immigrations flows in Europe</title>
+    <meta name="description" content="Data visualisation of number of immigrants across European countries, including France, Germany, Italy, Spain, Romania, the UK, Portugal, Poland, Bulgaria, and Greece">
+    <meta name="viewport" content="width=device-width, user-scalable=no, height=device-height, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>	
+<body>
+		<div id="chartContainer">
+		</div>
+		<div id="info">
+			<h1>Project by <a href="http://twitter.com/MiErtl">Michael Ertl</a> and <a href="http://twitter.com/basilesimon">Basile Simon</a></h1>
+			<h3>What's the story?</h3>
+                <p>Immigration is one of those topics you hear about almost every day in the media. From <a href="http://www.dailymail.co.uk/news/article-2268952/Thousands-Bulgarians-Romanians-plan-flood-UK-2014-employment-restrictions-relax.html">Romanians flooding the UK</a> to the massive movements of population caused by wars around the world. We are bombarded with numbers about the flows of migrants, affecting our capacity to see the wider picture.<br>
+                It is regularly an electoral issue in Europe, and some political parties are even founded on certain answers to the immigration question. Some even make their score thanks to the positions they took about illegal or legal immigration.
+                </p>
+
+                <p>Immigration is a crucial question. To clarify this hotly contested issue we have created an interactive visualisation of the immigration in Europe, which hopefully will help the reader to grasp how important the migration flows on our continent are. It displays graphically the top destinations for immigrants in Europe. 
+                </p>
+
+                <p>To enhance readability, we limited the scope to 10 countries, and we only represented the top 5 destinations for immigrations in the doughnut (although the data for the 10 countries is published in our datasets, see below).<br>
+                Due to the nature of the data, composed only from official census and sources, this chart does not take into account illegal immigration.
+                </p>
+        </div>
+		<div id="data">
+            <h3>Find our data:</h3>
+
+				<ul>
+					<li><p>The project's code is available <a href="https://github.com/basilesimon/immigration-donut">on Github.</a></p></li>
+					<li><p>We regrouped the data in a single dataset: <a href="https://docs.google.com/spreadsheet/ccc?key=0AkJUvpNr9VjLdDZTUFVkdE9TcWRiZWk0Ql81Y2FGYVE&usp=sharing">Google Spreadsheet</a> - <a href="https://www.dropbox.com/s/c2mgaozvqxnvj1t/Foreigners%20in%20EU%20countries.xlsx">direct download (XLS)</a> - <a href="https://www.dropbox.com/s/iwd8iu5oldto4kr/Foreigners%20in%20EU%20countries%20-%20Raw%20numbers.csv">direct download (CSV)</a>.</p></li>
+					<li><p>The JavaScript library used is <a href="http://canvasjs.com">CanvasJS.</a></p></li>
+				</ul>
+		</div>
+
+<!-- SCRIPTS -->
+
+		<script type="text/javascript" src="canvasjs.min.js"></script>
+		<script type="text/javascript">
+		window.onload = function () {
+	        CanvasJS.addColorSet("greenShades",
+	                [//colorSet Array
+	                "#66C266",
+	                "#B2E0B2",
+	                "#66C266",
+	                "#009900",
+	                "#FF6666",
+					"#FF1919",
+					"#E0E0E0",
+					"#FFB2B2",
+					"#FFB2B2",
+					"#FFE6E6",                
+	                ]);
+
+        var chart = new CanvasJS.Chart("chartContainer",
+        {
+            colorSet: "greenShades",
+                theme: "theme3",
+						
+            toolTip:{
+                enabled: true,
+            },
+
+            creditText: "",
+
+            title:{
+                text: "Migrations in Europe: interactive visualisation",
+                fontFamily: "'Open Sans', Helvetica, sans-serif",
+                horizontalAlign: "left",
+            }, 
+
+            legend:{
+                horizontalAlign: "left",
+                fontSize: "15",
+                verticalAlign: "bottom",
+                fontWeight: "lighter",
+            },
+
+            backgroundColor: "#fafafa",
+
+            data: [
+            {        
+                type: "doughnut",
+                startAngle: 60,
+                indexLabelFontSize: "15",
+                indexLabelLineThickness: "2",
+                showInLegend: false,
+
+                dataPoints: [
+                {name: "Germany", y: 80523746, label: "Germany", imageUrl: "img/germany.svg", pop: "80.5",
+                	toolTipContent: "<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Spain: 195,482<br>Living in Poland: 147,800<br>Living in France: 124,799<br>Living in the UK: 124,000<br>Living in Italy: 44,000<br><br>2011 net migration: +240,000"},
+				{name: "France", y: 65633194, label: "France", imageUrl:"img/france.svg", pop: "65.6",
+                     toolTipContent: "<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Spain: 122,385<br>Living in the UK: 120,000<br>Living in Germany: 113,885<br>Living in Italy: 34,000<br>Living in Portugal: 5,985<br><br>2011 net migration: +54,000"},
+                {name: "UK", y: 63887988, label: "UK", imageUrl: "img/uk.svg", pop: "63.9",
+                     toolTipContent: "<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Spain: 390,880<br>Living in France: 153,598<br>Living in Germany: 100,385<br>Living in Italy: 30,000<br>Living in Portugal: 23,608<br><br>2011 net migration: +215,000"},
+                {name: "Italy", y: 59685227, label: "Italy", imageUrl: "img/italy.svg", pop: "59.7",
+                     toolTipContent: "<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Germany: 529,417<br>Living in France: 303,923<br>Living in Spain: 187,847<br>Living in the UK: 112,000<br>Living in Portugal: 5,985<br><br>2011 net migration: +303,000"},
+                {name: "Spain", y: 46704308, label: "Spain", imageUrl:"img/spain.svg", pop: "46.7", 
+                     toolTipContent:"<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in France: 248,324<br>Living in Germany: 120,231<br>Living in the UK: 71,000<br>Living in Italy: 20,000<br>Living in Portugal: 18,030<br><br>2011 net migration: -38,000"},
+                {name: "Poland", y: 38533299, label: "Poland", imageUrl:"img/poland.svg", pop: "38.5", 
+                     toolTipContent:"<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in the UK: 576,000<br>Living in Germany: 532,375<br> Living in Italy: 112,000<br>Living in France: 92,255<br>Living in Spain: 85,862<br><br>2011 net migration: -109,000"},
+                {name: "Romania", y: 20057458, label: "Romania", imageUrl:"img/romania.svg", pop: "20.1", 
+                    toolTipContent: "<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Italy: 997,000<br>Living in Spain: 864,278<br>Living in Germany: 205,026<br>Living in the UK: 79,000<br>Living in Greece: 46,523<br><br>2011 net migration: not available"},
+                {name: "Greece", y: 11062508, label: "Greece", imageUrl:"img/greece.svg", pop: "11.1", 
+                    toolTipContent:"<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Germany: 298,524<br>Living in the UK: 29,000<br>Living in France: 9,630<br>Living in Romania: 6,472<br>Living in Bulgaria: 1,253<br><br>2011 net migration: -15,000"},
+                {name: "Portugal", y: 10487289, label: "Portugal", imageUrl:"img/portugal.svg", pop: "10.5", 
+                    toolTipContent:"<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in France: 588,276<br>Living in Spain: 140,706<br>Living in Germany: 120,560<br>Living in the UK: 102,000<br><br>2011 net migration: -24,000"},
+                {name: "Bulgaria", y: 7284552, label: "Bulgaria", imageUrl: "img/bulgaria.svg", pop: "7.3", 
+                    toolTipContent:"<strong>{name}</strong>:<br>Population: {pop} million<br><br>Living in Spain: 172,634<br>Living in Germany: 118,759<br>Living in Greece: 75,915<br>Living in Italy: 53,000<br>Living in the UK: 46,000<br><br>2008 net migration: -900"},
+                ]
+            }
+            ]
+        });
+
+        var dataPoints = chart.options.data[0].dataPoints;
+        for(var i = 0; i < dataPoints.length; i++){
+            dataPoints[i].mouseover = updateBackgroundImage;
+        }
+
+        chart.render();
+
+        function updateBackgroundImage(e){
+            document.getElementById('chartContainer').style.backgroundImage = "url('" + e.dataPoint.imageUrl + "')";
+        }
+    }
+	</script>
+
+</body>
+</html>
