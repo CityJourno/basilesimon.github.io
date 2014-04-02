@@ -1,32 +1,46 @@
 body {
-  background-color: #fafafa;
-  font-size: 16px;
+  padding: 1em;
 }
 
-div {
-  height: 100px;
-  width: 60%; /*to refine with box model*/
-  margin-left: 35%; /*to refine with box model*/
+.col-md-4 {
+  margin-top: 2em;
+}
+
+.col-md-8 {
+  margin-top: 2em;
   border-bottom: 1px solid #A1A1A1;
   -moz-transition: all .4s .1s ease-in-out;
-  background-color: red;
 }
 
-div:hover {
+#blue {
+  background-image: url(../img/bg.png);
+  height: 100px;
+}
+
+#blue:hover{
   height: 200px;
   -moz-transition: all .4s .2s ease-in-out;
   background-color: transparent;
 }
 
-#blue {
-  background-image: url(../img/bg.png);
+#orange {
+  background-color: orange;
+  height: 100px;
 }
 
-#orange {
+#orange:hover {
+  height: 200px;
+  -moz-transition: all .4s .2s ease-in-out;
   background-color: orange;
 }
 
 #green {
   background-color: green;
+  height: 100px;
 }
 
+#green:hover {
+  height: 200px;
+  -moz-transition: all .4s .2s ease-in-out;
+  background-color: green;
+}
