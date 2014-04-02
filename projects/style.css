@@ -4,17 +4,21 @@ body {
 
 .col-md-4 {
   margin-top: 2em;
+  padding-right: 2em;
 }
 
 .col-md-8 {
   margin-top: 2em;
-  border-bottom: 1px solid #A1A1A1;
+}
+
+.animate {
+  height: 100px;
   -moz-transition: all .4s .1s ease-in-out;
+  border-bottom: 1px solid #A1A1A1;
 }
 
 #blue {
   background-image: url(../img/bg.png);
-  height: 100px;
 }
 
 #blue:hover{
@@ -22,10 +26,18 @@ body {
   -moz-transition: all .4s .2s ease-in-out;
   background-color: transparent;
 }
+#blue > p:nth-child(2) {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+}
 
+#blue > p:nth-child(2):hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
+}
 #orange {
-  background-color: orange;
-  height: 100px;
+  background-color: transparent;
+  background-image: url(../img/immigration.png);
 }
 
 #orange:hover {
@@ -34,13 +46,33 @@ body {
   background-color: orange;
 }
 
+#orange > p:nth-child(2) {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+}
+
+#orange > p:nth-child(2):hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
+}
+
 #green {
-  background-color: green;
-  height: 100px;
+  background-color: transparent;
+  background-image: url(../img/popathon.png);
 }
 
 #green:hover {
   height: 200px;
   -moz-transition: all .4s .2s ease-in-out;
-  background-color: green;
+  background-color: transparent;
+}
+
+#green > p:nth-child(2) {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+}
+
+#green > p:nth-child(2):hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
 }
