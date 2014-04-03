@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dissonance</title>
+</head>
+	<style>
+
+		body{
+			font-size: 16px;
+			font-family: sans-serif;
+			background-color: #fafafa;
+		}
+		h1,h3{
+			text-align: center;
+		}
+		h3{
+			font-style: italic;
+			color:#aaa;
+			margin-top: -1em;
+		}
+		article, p, ul{
+			width: 70%;
+			padding-left: 15%;
+		}
+		iframe{
+			border: 0px solid #ffffff;
+		}
+		footer{
+			text-align:center;
+			color:grey;
+			font-size: 0.8em;
+			padding-top: 3em;
+		}
+		a{
+  			text-decoration: none;
+  			color:grey;
+		}
+		ul{
+			padding-left: 20%;
+			margin-top: -0.5em;
+			margin-bottom: -0.5em;
+		}
+	</style>
+<body>
+
+<h1>"The David Cameron paradox"</h1>
+<h3>(slightly) misleading title</h3>
+
+<article>
+	<p>Both of these charts are based on API queries to BBC services for "David Cameron".
+	Two JSON files were returned, parsed and visualised with d3.js.</p>
+
+	<p>Despite coming from two almost identical queries, they present enormous differences. 
+	The version coming from the Linked Data Core (case 1) shows a dominance of mentions by Birmingham and Football, while the version coming from the Juicer (case 2) presents what seems to be a more accurate portrait of PM's mentions by the BBC.</p>
+
+	<p>I reached our data architect, Jeremy Tarling, for more explanations. </p>
+
+	<br/><p style="text-align:center;">----------------------------------------------</p>
+
+</article>
+
+	<iframe src="LDP.html" width="100%" height="645px;"></iframe>
+
+	<br/><br/><br/><br/><p style="text-align:center;">----------------------------------------------</p>
+
+	<iframe src="juicer.html" width="100%" height="600px"></iframe>
+
+	<br/><p style="text-align:center;">----------------------------------------------</p>
+
+	<h1>Conclusion</h1>
+
+	<p>In this case, the dissonance in the caused by the very nature of the tool which gave us the data.</p>
+
+	<p>The first one, the Linked Data Core, is probably the most reliable in fact, but we are first led not to trust its results because of what appears to be an aberration. This aberration is caused by the partial deployment of the tagging system.</p>
+
+	<p>The second one, the Juicer, produces at first sight a more balanced and reliable result, despite being a less-trusted tool.</p>
+
+	<p><b>Note:</b> The study of the number of occurences reveals eloquently the imbalance:</p>
+		<ul>
+			<li>The Link Data Core returns 29,370 occurences of 'David Cameron',</li>
+			<li>While the Juicer returns only 5,788 of them.</li>
+		</ul>
+	<p>If the two datasets were to be combined, the Juicer's graph dominant entity 'BBC Birmingham and Black Country' would rank 10th.</p><br/>
+
+	<p><b>Bias in the data is nothing new.</b> Data-journalists need to be aware that, as for other 'classic' sources of journalists, the data can:
+		<ul>
+			<li>Be wrong - <em>i.e. not on purpose</em></li>
+			<li>Or lie - <em>i.e. on purpose</em></li>
+		</ul>
+	<p>Hence, journos keen on working with data as one of their sources <b>need</b> to interrogate the accuracy, precision and the completeness of their material. Failing to do so is a mistake in all respects comparable to missing to verify the reliability of a human source.</p>
+
+<footer>
+	Basile Simon - BBC News Labs<br/>
+	<a href="http://twitter.com/basilesimon"><b>@basilesimon</a> - 
+	<a href="http://twitter.com/BBC_News_Labs">@BBC_News_Labs</b></a>
+</footer>
+</body>
+</html>

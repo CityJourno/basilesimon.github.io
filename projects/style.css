@@ -18,7 +18,7 @@ body {
 }
 
 #blue {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/cameron.png);
 }
 
 #blue:hover{
@@ -26,6 +26,7 @@ body {
   -moz-transition: all .4s .2s ease-in-out;
   background-color: transparent;
 }
+
 #blue > p:nth-child(2) {
   opacity: 0;
   -moz-transition: all .4s .2s ease-in-out;
@@ -35,6 +36,7 @@ body {
   opacity: 1;
   -moz-transition: all .4s .2s ease-in-out;
 }
+
 #orange {
   background-color: transparent;
   background-image: url(../img/immigration.png);
@@ -59,20 +61,63 @@ body {
 #green {
   background-color: transparent;
   background-image: url(../img/popathon.png);
+  color: black;
 }
 
 #green:hover {
   height: 200px;
   -moz-transition: all .4s .2s ease-in-out;
-  background-color: transparent;ro
+  background-color: transparent;
 }
 
 #green > p:nth-child(2) {
   opacity: 0;
   -moz-transition: all .4s .2s ease-in-out;
+  color:black;
 }
 
 #green > p:nth-child(2):hover {
   opacity: 1;
   -moz-transition: all .4s .2s ease-in-out;
+  color: black;
+}
+
+#rents {
+  background-color: transparent;
+  background-image: url(../img/rents.png);
+  background-repeat: no-repeat;
+  background-size: fill;
+  color: black;
+}
+
+#rents:hover {
+  height: 200px;
+  -moz-transition: all .4s .2s ease-in-out;
+  background-color: transparent;
+}
+
+#rents > p:nth-child(2) {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+  color:black;
+}
+
+#rents > p:nth-child(2):hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
+  color: black;
+}
+
+.col-md-8 p {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+  color: black;
+  padding: 1em;
+}
+
+.col-md-8 p:hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
+  color: black;
+  padding: 0.5em;
 }
