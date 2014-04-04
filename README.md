@@ -19,7 +19,4 @@ basilesimon.fr - homepage vcard style
 
 ## Todo
 
-- Higher resolution screenshot for index vCard page
-- Layout of projects page
-- Selection of projects displayed on projects page
 - Staging directly on basilesimon.fr domains (FTP)
