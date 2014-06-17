@@ -120,6 +120,35 @@ body {
   color: black;
 }
 
+#euelections {
+  background-color: transparent;
+  background-image: url(../img/eu.png);
+  background-repeat: no-repeat;
+  background-size: fill;
+  color: black;
+}
+
+#euelections:hover {
+  height: 200px;
+  -moz-transition: all .4s .2s ease-in-out;
+  -webkit-transition: all .4s .2s ease-in-out;
+  background-color: transparent;
+}
+
+#euelections > p:nth-child(2) {
+  opacity: 0;
+  -moz-transition: all .4s .2s ease-in-out;
+  -webkit-transition: all .4s .2s ease-in-out;
+  color:black;
+}
+
+#euelections > p:nth-child(2):hover {
+  opacity: 1;
+  -moz-transition: all .4s .2s ease-in-out;
+  -webkit-transition: all .4s .2s ease-in-out;
+  color: black;
+}
+
 .col-md-8 p {
   opacity: 0;
   -moz-transition: all .4s .2s ease-in-out;
