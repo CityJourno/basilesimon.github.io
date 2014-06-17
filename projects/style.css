@@ -19,7 +19,7 @@ body {
 }
 
 #cameron {
-  background-image: url(../img/cameron.png);
+  background-image: url("http://basilesimon.fr/img/cameron.png");
 }
 
 #cameron:hover{
@@ -43,7 +43,7 @@ body {
 
 #immigration {
   background-color: transparent;
-  background-image: url(../img/immigration.png);
+  background-image: url("http://basilesimon.fr/img/immigration.png");
 }
 
 #immigration:hover {
@@ -66,7 +66,7 @@ body {
 
 #popathon {
   background-color: transparent;
-  background-image: url(../img/popathon.png);
+  background-image: url("http://basilesimon.fr/img/popathon.png");
   color: black;
 }
 
@@ -93,7 +93,7 @@ body {
 
 #rents {
   background-color: transparent;
-  background-image: url(../img/rents.png);
+  background-image: url("http://basilesimon.fr/img/rents.png");
   background-repeat: no-repeat;
   background-size: fill;
   color: black;
@@ -122,7 +122,7 @@ body {
 
 #euelections {
   background-color: transparent;
-  background-image: url(../img/eu.png);
+  background-image: url("http://basilesimon.fr/img/eu.png");
   background-repeat: no-repeat;
   background-size: fill;
   color: black;
