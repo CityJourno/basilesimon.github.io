@@ -18,4 +18,5 @@ body {
 h3 {
   line-height: 0.1;
   padding-top: 0.5em;
+  font-weight: bold;
 }
