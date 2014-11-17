@@ -4,163 +4,18 @@ body {
 
 .col-md-4 {
   margin-top: 2em;
-  padding-right: 2em;
+  padding-right: 4em;
 }
 
-.col-md-8 {
+.col-md-8, .col-md-6 {
   margin-top: 2em;
 }
 
-.animate {
-  height: 100px;
-  -moz-transition: all .4s .1s ease-in-out;
-  -webkit-transition: all .4s .1s ease-in-out;
-  border-bottom: 1px solid #A1A1A1;
+.links {
+  text-decoration: underline;
 }
 
-#cameron {
-  background-image: url("http://basilesimon.fr/img/cameron.png");
-}
-
-#cameron:hover{
-  height: 200px;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  background-color: transparent;
-}
-
-#cameron > p:nth-child(2) {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-}
-
-#cameron > p:nth-child(2):hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-}
-
-#immigration {
-  background-color: transparent;
-  background-image: url("http://basilesimon.fr/img/immigration.png");
-}
-
-#immigration:hover {
-  height: 200px;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-}
-
-#immigration > p:nth-child(2) {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-}
-
-#immigration > p:nth-child(2):hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-}
-
-#popathon {
-  background-color: transparent;
-  background-image: url("http://basilesimon.fr/img/popathon.png");
-  color: black;
-}
-
-#popathon:hover {
-  height: 200px;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  background-color: transparent;
-}
-
-#popathon > p:nth-child(2) {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color:black;
-}
-
-#popathon > p:nth-child(2):hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color: black;
-}
-
-#rents {
-  background-color: transparent;
-  background-image: url("http://basilesimon.fr/img/rents.png");
-  background-repeat: no-repeat;
-  background-size: fill;
-  color: black;
-}
-
-#rents:hover {
-  height: 200px;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  background-color: transparent;
-}
-
-#rents > p:nth-child(2) {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color:black;
-}
-
-#rents > p:nth-child(2):hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color: black;
-}
-
-#euelections {
-  background-color: transparent;
-  background-image: url("http://basilesimon.fr/img/eu.png");
-  background-repeat: no-repeat;
-  background-size: fill;
-  color: black;
-}
-
-#euelections:hover {
-  height: 200px;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  background-color: transparent;
-}
-
-#euelections > p:nth-child(2) {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color:black;
-}
-
-#euelections > p:nth-child(2):hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color: black;
-}
-
-.col-md-8 p {
-  opacity: 0;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color: black;
-  padding: 1em;
-}
-
-.col-md-8 p:hover {
-  opacity: 1;
-  -moz-transition: all .4s .2s ease-in-out;
-  -webkit-transition: all .4s .2s ease-in-out;
-  color: black;
-  padding: 0.5em;
+h3 {
+  line-height: 0.1;
+  padding-top: 0.5em;
 }
